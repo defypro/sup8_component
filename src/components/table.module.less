@@ -1,0 +1,47 @@
+:global {
+  .ant-table {
+    overflow: auto;
+    white-space: nowrap;
+    max-height: 50vh;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table-th {
+    min-width: 100px;
+  }
+
+  .ant-table .ant-btn-link {
+    padding: 0;
+  }
+}
+
+.more {
+  :global {
+    .ant-drawer-content-wrapper {
+      width: 500px !important;
+    }
+
+    .ant-steps-item-content {
+      width: 400px !important;
+    }
+
+    @media screen and (max-width: 500px) {
+      .ant-drawer-content-wrapper {
+        width: 100% !important;
+      }
+
+      .ant-steps-item-content {
+        width: 90% !important;
+      }
+    }
+  }
+}
+
+.filterForm {
+  :global {
+    .ant-form-item-label {
+      width: 70px;
+    }
+  }
+}

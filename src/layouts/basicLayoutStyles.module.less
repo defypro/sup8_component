@@ -1,0 +1,73 @@
+.mainContainer {
+  min-height: 100vh;
+  width: calc(100% - 200px);
+  flex: unset;
+  position: relative;
+  margin-left: 200px;
+}
+
+.logo {
+  text-align: center;
+  overflow: hidden;
+}
+
+.logo h1 {
+  display: inline-block;
+  margin: 20px 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  vertical-align: middle;
+  animation: fade-in;
+  animation-duration: .3s;
+  white-space:nowrap;
+}
+
+.header {
+  z-index: 1;
+  position: fixed;
+  width: calc(100% - 200px);
+  background: #fff;
+  padding: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .mainContainer {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .header {
+    width: 100%;
+  }
+}
+
+.rightHeader {
+  display: flex;
+  float: right;
+  height: 64px;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.rightHeaderMenu {
+  padding: 0 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.rightHeaderMenu:hover {
+  background: rgba(0, 0, 0, .025);
+}
+
+.settingsMenu {
+  min-width: 120px;
+}
+
+.settingsMenuIcon {
+  font-size: 24px;
+}
+
+.pageTitle {
+  font-size: 14px;
+}
